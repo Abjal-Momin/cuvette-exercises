@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cuvette Exercise Sign In</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="signUp.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -42,17 +43,35 @@
                   required
                 />
               </fieldset>
+              <fieldset class="field">
+                <legend>Number :</legend>
+                <input
+                  type="number"
+                  id="number"
+                  class="input"
+                  placeholder="Enter Your Number"
+                  required
+                />
+              </fieldset>
+
+              <div class="terms-q">
+                <input type="radio" id="terms" required />
+                <label for="terms" class="terms"
+                  >Accept Terms & Conditions</label
+                >
+              </div>
+
               <div class="button">
                 <a href="./index.html">
-                  <button class="input" id="btn">Sign In</button>
+                  <button class="input" id="btn">Sign Up</button>
                 </a>
               </div>
             </form>
             <div class="next-page">
-              <div class="left"><p>New to Store</p></div>
+              <div class="left"><p>Already have a Account</p></div>
               <div class="right">
-                <a href="./signUp.html">
-                  <button class="input" id="btn">Sign Up</button>
+                <a href="./index.html">
+                  <button class="input" id="btn">Sign In</button>
                 </a>
               </div>
             </div>
@@ -64,9 +83,10 @@
       <div class="fContainer">
         <div class="fLeft">
           <h2 class="phantom-footer">Phantom.Store</h2>
-
           <p id="copyright">
-            © <a href="./public/hidden.html" target="_blank" id="year">2025</a> Phantom.Store
+            ©
+            <a href="./public/hidden.html" target="_blank" id="year">2025</a>
+            Phantom.Store
           </p>
         </div>
         <div class="fRight">
@@ -81,5 +101,4 @@
       </div>
     </footer>
   </body>
-  <!-- Made by Abjal Momin -->
 </html>
