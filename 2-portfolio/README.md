@@ -11,7 +11,7 @@
 ## Live Link
 
 ```bash
-https://cuvette-exercise-signup.netlify.app/
+https://boorstrap-abjal-portfolio.netlify.app/
 ```
 
 ## Table of Contents
@@ -60,4 +60,4 @@ Familiarity with basic HTML and CSS is recommended to effectively understand and
 
 ---
 
-*Note: This README template is structured to provide clear and concise information about the project, facilitating ease of use and collaboration. For more insights on crafting effective READMEs, consider exploring resources like [Make a README](https://www.makeareadme.com/) and [freeCodeCamp's guide on writing a good README file](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/).* 
+_Note: This README template is structured to provide clear and concise information about the project, facilitating ease of use and collaboration. For more insights on crafting effective READMEs, consider exploring resources like [Make a README](https://www.makeareadme.com/) and [freeCodeCamp's guide on writing a good README file](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)._
