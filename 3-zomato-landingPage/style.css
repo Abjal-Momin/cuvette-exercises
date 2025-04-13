@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* main containers style */
+.mainContainer {
+  height: 100vh;
+  width: 100vw;
+  border: 2px solid blue;
+  padding: 0 2rem;
+}
+
+/* Header nav section */
+header {
+  border: 2px solid violet;
+  height: 15%;
+  display: flex;
+  justify-content: space-around;
+}
+.logo {
+  border: 2px solid green;
+  width: 30%;
+  height: 100%;
+}
+.imgLogo {
+  width: 60%;
+  border: 2px solid black;
+}
+.location {
+  border: 2px solid green;
+  width: 30%;
+}
+.logIn {
+  border: 2px solid green;
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font: 1.2rem;
+}
+
+/* main section  */
+main {
+  border: 2px solid violet;
+  height: 85%;
+}
+.mainSectionTab {
+  border: 2px solid green;
+  height: 15%;
+  display: flex;
+}
+.section {
+  border: 2px solid red;
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.section:hover {
+  cursor: pointer;
+  background-color: rgb(240, 240, 240);
+}
+.section img {
+  height: 40%;
+}
+#tab1{
+  color:  orange;
+  border-bottom: 2px solid orangered;
+}
+
+/* collection  */
+.collection {
+  border: 2px solid green;
+  height: 85%;
+}
+.headingContainer {
+  border: 2px solid blue;
+  height: 15%;
+}
+.carouselContainer {
+  border: 2px solid blue;
+  height: 85%;
+}
+.carouselContent {
+  border: 2px solid red;
+  height: 10%;
+}
+.carouselCard {
+  border: 2px solid red;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.carouselCardContainer {
+  border: 2px solid green;
+  height: 90%;
+  width: 23%;
+}
