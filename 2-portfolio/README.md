@@ -46,7 +46,7 @@ Familiarity with basic HTML and CSS is recommended to effectively understand and
 2. **Navigate to the Project Directory**:
 
    ```bash
-   cd 2-portfolio
+   cd cuvette-exercises/2-portfolio
    ```
 
 3. **Open the Project**:
