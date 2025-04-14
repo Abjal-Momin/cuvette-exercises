@@ -5,67 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>landing page</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="mainContainer" id="mainContainer">
       <header>
         <div class="logo">
-          <div class="imgLogo"></div>
+          <img
+            src="./images/zomatoLogo.avif"
+            class="imgLogo"
+            alt="zomato Logo"
+          />
         </div>
-        <div class="location">
-          <select name="select" id="select">
-            <option value="val">val</option>
-            <option value="val">val</option>
-            <option value="val">val</option>
-            <option value="val">val</option>
-          </select>
+        <div class="locationSearchWrapper">
+          <div class="location">
+            <img
+              src="./images/location-pin.png"
+              class="loactionPinImg"
+              alt="loaction pin"
+            />
+            <div id="select">
+              <input
+                type="text"
+                class="locationInput"
+                placeholder="Bengaluru"
+              />
+              <img
+                src="./images/down-arrow.png"
+                class="arrowDown"
+                alt="arrow Down"
+              />
+            </div>
+          </div>
+          <div class="searchBar">
+            <img
+              src="./images/magnifying-glass.png"
+              class="magnifyingGlass"
+              alt="magnifying glass"
+            />
+            <input
+              type="text"
+              class="searchInput"
+              placeholder="Search for restaurant, cuisine or a dish"
+            />
+          </div>
         </div>
         <div class="logIn">
-          <button>LogIn</button>
-          <button>SignUp</button>
+          <button>Log in</button>
+          <button>Sign up</button>
         </div>
       </header>
       <main>
-        <div class="mainSectionTab" id="mainSectionTab">
-          <div class="section" id="tab1">
-            <img src="./images/ProjectBg1.jpg" alt="" />
-            <p>Dining Out</p>
-          </div>
-          <div class="section" id="tab2">
-            <img src="./images/ProjectBg1.jpg" alt="" />
-            <p>Dining Out</p>
-          </div>
-          <div class="section" id="tab3">
-            <img src="./images/ProjectBg1.jpg" alt="" />
-            <p>Dining Out</p>
+        <div class="homeAddressNavi">
+          <p class="homeAddress">
+            Home / India /
+            <span class="addressSpan">Bengaluru Restaurants</span>
+          </p>
+          <div class="mainSectionTab" id="mainSectionTab">
+            <div class="tab" id="tab1">
+              <div class="tabImage tabImage1">
+                <img src="./images/icon1.avif" alt="icon1" />
+              </div>
+              <p>Dining Out</p>
+            </div>
+            <div class="tab" id="tab2">
+              <div class="tabImage">
+                <img src="./images/icon2.webp" alt="icon2" />
+              </div>
+              <p>Delivery</p>
+            </div>
+            <div class="tab" id="tab3">
+              <div class="tabImage">
+                <img src="./images/icon3.webp" alt="icon3" />
+              </div>
+              <p>Nightlife</p>
+            </div>
           </div>
         </div>
+        <!-- homeAddressNavi Done -->
         <div class="collection">
-          <div class="headingContainer"></div>
+          <div class="headingContainer">
+            <h1 class="poppins-light">Collections</h1>
+          </div>
           <div class="carouselContainer">
-            <div class="carouselContent"></div>
+            <div class="carouselContent">
+              <p>
+                Explore curated lists of top restaurants, cafes, pubs, and bars
+                in Bengaluru, based on trends
+              </p>
+              <div class="allCollectionsBengaluru">
+                <p>All collections in Bengaluru</p>
+                <img
+                  src="./images/arrowhead-pointing-to-the-rightRed.png"
+                  alt=""
+                />
+              </div>
+            </div>
             <div class="carouselCard">
-              <div
-                class="carouselCardContainer"
-                id="carouselCardContainer1"
-              ></div>
-              <div
-                class="carouselCardContainer"
-                id="carouselCardContainer2"
-              ></div>
-              <div
-                class="carouselCardContainer"
-                id="carouselCardContainer3"
-              ></div>
-              <div
-                class="carouselCardContainer"
-                id="carouselCardContainer4"
-              ></div>
+              <div class="carouselCardContainer" id="carouselCardContainer1">
+                <img src="./images/carousel2.png" alt="carousel2" />
+                <p class="carouselImageText">Top Trending Spots</p>
+                <p class="carouselImageTextPlace">40 Places</p>
+              </div>
+              <div class="carouselCardContainer" id="carouselCardContainer2">
+                <img src="./images/carousel3.png" alt="carousel3" />
+                <p class="carouselImageText">Best Rooftop Places</p>
+                <p class="carouselImageTextPlace">54 Places</p>
+              </div>
+              <div class="carouselCardContainer" id="carouselCardContainer3">
+                <img src="./images/carousel4.png" alt="carousel4" />
+                <p class="carouselImageText">Newly Opened Places</p>
+                <p class="carouselImageTextPlace">14 Places</p>
+              </div>
+              <div class="carouselCardContainer" id="carouselCardContainer4">
+                <img src="./images/carousel5.png" alt="carousel5" />
+                <p class="carouselImageText">It's a Date</p>
+                <p class="carouselImageTextPlace">30 Places</p>
+              </div>
             </div>
           </div>
         </div>
       </main>
     </div>
   </body>
-  <script src="test.js"></script>
 </html>
