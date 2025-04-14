@@ -10,7 +10,7 @@
 
 ## 🚀 Live Deo
 ```bash
-https://boorstrap-abjal-portfolio.netlify.app/
+https://landing-page-zomatoo.netlify.app/
 ```
 
 ## 🛠️ Tech Stac
