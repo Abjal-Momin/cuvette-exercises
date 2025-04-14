@@ -4,12 +4,13 @@
   box-sizing: border-box;
   font-family: Okra, Helvetica, sans-serif;
 }
-
+body {
+  overflow-x: hidden;
+}
 /* main containers style */
 .mainContainer {
   height: 100vh;
   width: 100vw;
-  border: 2px solid blue;
 }
 
 /* Header-nav section */
@@ -131,6 +132,7 @@ main {
   align-items: center;
   gap: 0.7rem;
   cursor: pointer;
+  padding-bottom: 1rem;
 }
 .tabImage {
   height: 4rem;
@@ -157,9 +159,10 @@ main {
 
 /* Containet of carousel  */
 .collection {
-  padding: 0 7.4rem;
-  height: 85%;
+  height: 90%;
   background-color: rgb(248, 248, 248);
+  padding: 0 7.4rem;
+  padding-top: 1rem;
 }
 .headingContainer {
   font-size: 1rem;
@@ -174,8 +177,7 @@ main {
   font-style: normal;
 }
 .carouselContainer {
-  height: 85%;
-  padding-top: 1rem;
+  height: 80%;
 }
 .carouselContent {
   height: 10%;
@@ -206,7 +208,7 @@ main {
   justify-content: space-between;
 }
 .carouselCardContainer {
-  height: 90%;
+  height: 85%;
   width: 23%;
   position: relative;
 }
@@ -232,5 +234,215 @@ main {
   color: white;
   font-size: 1rem;
 }
-/* border: 2px solid green; */
-/* Done  */
+
+/* Filter Section  */
+.filterButtons {
+  margin-top: 5.5rem;
+  height: 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 7.4rem;
+}
+.filterBnt {
+  border: 1px solid rgb(207, 207, 207);
+  color: rgb(156, 156, 156);
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(54, 54, 54, 0.06) 0px 1px 2px;
+  border-radius: 0.5rem;
+  padding: 3px;
+}
+.filterBnt img {
+  width: 20px;
+  padding: 0 2px;
+  cursor: pointer;
+}
+.filterBnt button {
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* image section */
+.HeroImgSection {
+  height: 30%;
+  padding: 0 7.4rem;
+  margin-top: 1.5rem;
+}
+.HeroImgSection img {
+  width: 100%;
+  border-radius: 0.1rem;
+}
+
+/* Place Heading */
+.PlaceHeading {
+  height: 15%;
+  margin-top: 6rem;
+  padding: 0 7.4rem;
+}
+.PlaceHeading p {
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(28, 28, 28);
+  line-height: 1.2;
+}
+
+/* Place heading section */
+.Cards {
+  height: 100%;
+  padding: 0 7.4rem;
+}
+.cardSet3 {
+  display: flex;
+  justify-content: space-between;
+  height: 66%;
+  margin-bottom: 3rem;
+}
+.card {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card:hover {
+  border-radius: 0.6rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.card img {
+  width: 88%;
+  height: 75%;
+  object-fit: cover;
+  border-radius: 0.6rem;
+  margin: auto;
+}
+.titleRating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0.2rem;
+  padding: 0.5rem;
+}
+.title {
+  font-size: 1rem;
+  color: rgb(28, 28, 28);
+}
+.rating {
+  padding: 3px 5px;
+  border-radius: 7px;
+  background-color: rgb(38, 126, 62);
+  color: white;
+  font-size: 0.7rem;
+}
+.HotelNamePrice {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  align-items: center;
+  margin: 0 0.2rem;
+}
+.HotelName {
+  font-size: 0.9rem;
+  color: rgb(105, 105, 105);
+}
+.price {
+  font-size: 0.9rem;
+  color: rgb(105, 105, 105);
+}
+.locationDistance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+  margin: 0.2rem 0.2rem;
+}
+.location {
+  width: 70%;
+  font-size: 0.8rem;
+  color: rgb(105, 105, 105);
+}
+.distance {
+  font-size: 0.9rem;
+  color: rgb(105, 105, 105);
+}
+
+/* Explore section */
+.Explore {
+  height: 80%;
+  margin-top: 19rem;
+  padding: 0 7.4rem;
+}
+.exploreHeading {
+  font-size: 2.1rem;
+}
+
+.dropDown {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+.dropDownPara {
+  font-size: 20px;
+  color: rgba(28, 28, 28, 0.784);
+}
+.dropDown img {
+  width: 20px;
+}
+
+/* footer section  */
+.footer {
+  height: 82%;
+  background-color: rgb(248, 248, 248);
+  padding: 3rem 7.4rem;
+}
+.logoFooter img {
+  width: 8rem;
+  margin-bottom: 2rem;
+}
+
+/* Footer links */
+.footerLinks {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4.7rem;
+  border-bottom: 1px solid gray;
+  margin-bottom: 2rem;
+}
+.footerLink1 {
+  display: flex;
+  flex-direction: column;
+}
+.footerLinks a {
+  color: rgb(105, 105, 105);
+  font-size: 0.9rem;
+  padding: 0.4rem;
+  text-decoration: none;
+}
+.firstLink {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+.footerLink1 img {
+  width: 8rem;
+  margin: 0.4rem;
+  cursor: pointer;
+}
+.lastLinks {
+  margin-right: 5rem;
+}
+.bottomPara {
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: rgb(79, 79, 79);
+}
+.myName {
+  letter-spacing: 2px;
+}
+/* Done */
