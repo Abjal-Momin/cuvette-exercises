@@ -39,7 +39,10 @@
         </header>
         <main class="Main">
           <div class="mainContainer">
-            <div onclick="userChoise()" class="Circule stone imgPositionStone">
+            <div
+              onclick="userChoise(1, 'stone')"
+              class="Circule stone imgPositionStone"
+            >
               <img
                 src="./images/hand1.png"
                 class="image"
@@ -47,7 +50,7 @@
               />
             </div>
             <div
-              onclick="userChoise()"
+              onclick="userChoise(2, 'scissor')"
               class="Circule scissor imgPositionScriccor"
             >
               <img
@@ -56,7 +59,10 @@
                 alt="Stone Hand Image"
               />
             </div>
-            <div onclick="userChoise()" class="Circule paper imgPositionPaper">
+            <div
+              onclick="userChoise(3, 'paper')"
+              class="Circule paper imgPositionPaper"
+            >
               <img
                 src="./images/hand3.png"
                 class="image"
@@ -96,11 +102,11 @@
               <div class="outerMost">
                 <div class="outerRing">
                   <div class="innerRign">
-                    <div class="Circule stone">
+                    <div class="stone" id="SecondCirculeUser">
                       <img
                         src="./images/hand1.png"
-                        class="image"
-                        alt="Stone Hand Image"
+                        class="image imgPathUser"
+                        alt="Hand Image"
                       />
                     </div>
                   </div>
@@ -117,11 +123,11 @@
               <div class="outerMost">
                 <div class="outerRing">
                   <div class="innerRign">
-                    <div class="Circule stone">
+                    <div class="stone" id="SecondCircule">
                       <img
                         src="./images/hand1.png"
-                        class="image"
-                        alt="Stone Hand Image"
+                        class="image imgPathPc"
+                        alt="Hand Image"
                       />
                     </div>
                   </div>
