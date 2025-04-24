@@ -14,14 +14,13 @@
   background-color: #8cc461;
 }
 .innerWrapper {
-  width: 65%;
+  width: 70%;
   height: 100%;
   margin: auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 header {
   height: 30%;
-  border: 1px solid black;
   display: flex;
   align-items: end;
 }
@@ -66,4 +65,227 @@ header {
   color: #656565;
   font-size: 2.5rem;
   font-weight: 800;
+}
+/* Header is done */
+
+.Main {
+  width: 100%;
+  height: 59%;
+  position: relative;
+}
+.mainContainer {
+  height: 75%;
+  width: 40%;
+  margin: auto;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* display: none; */
+}
+.image {
+  width: 3rem;
+}
+.Circule {
+  width: 6rem;
+  height: 6rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
+}
+.stone {
+  border: 0.8rem solid #0074b6;
+}
+.imgPositionStone {
+  top: 0;
+  left: 0;
+}
+.scissor {
+  border: 0.8rem solid #bd00ff;
+}
+.imgPositionScriccor {
+  top: 0;
+  right: 0;
+}
+.paper {
+  border: 0.8rem solid #ffa943;
+}
+.imgPositionPaper {
+  bottom: 0;
+  left: 35%;
+}
+.lines {
+  position: absolute;
+  width: 70%;
+  height: 0.8rem;
+  background-color: #000000a3;
+  z-index: 5;
+}
+.line1 {
+  top: 2.5rem;
+  left: 4rem;
+}
+.line2 {
+  transform: rotate(45deg);
+  top: 8rem;
+  left: -1rem;
+}
+.line3 {
+  transform: rotate(-45deg);
+  top: 8rem;
+  right: 0rem;
+}
+/* first main section done  */
+.secondSection {
+  height: 80%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  display: none;
+}
+.userSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+.pcSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+.pick {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.outerMost {
+  border-radius: 50%;
+  background-color: #2f9a254c;
+  width: 12rem;
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.outerRing {
+  border-radius: 50%;
+  background-color: #2e9a2563;
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.innerRign {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: #2f9a25cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.winnerSection {
+  display: flex;
+  gap: 0.8rem;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  height: 90%;
+}
+.WinnerStatus {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.againstPC {
+  font-size: 1.2rem;
+}
+.playBtn {
+  border: none;
+  color: black;
+  background-color: #ffffff;
+  border-radius: 0.6rem;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+/* second main section done  */
+
+/* Main section done */
+
+footer {
+  height: 5%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 0.6rem;
+  /* display: none; */
+}
+.btn {
+  padding: 0.2rem;
+  font-size: 1rem;
+  border: 2px solid #ffffff;
+  border-radius: 0.6rem;
+  background: transparent;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.next {
+  display: none;
+}
+/* footer section done */
+
+.rule {
+  background-color: #004429;
+  border: 0.3rem solid #ffffff;
+  border-radius: 0.8rem;
+  font-size: 0.9rem;
+  width: 20rem;
+  position: absolute;
+  right: 1rem;
+  top: 15rem;
+  padding: 2rem;
+  display: none;
+}
+.rule li::marker {
+  color: #ffd600;
+}
+.rule li {
+  list-style-type: square;
+}
+.ruleHeading {
+  text-align: center;
+  padding-bottom: 0.6rem;
+  position: relative;
+}
+.ruleList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.cross {
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  border: 0.5rem solid #ffffff;
+  background-color: #ff0000;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: 900;
+  position: absolute;
+  top: -1.3rem;
+  right: -1.2rem;
+  cursor: pointer;
 }
