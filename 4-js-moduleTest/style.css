@@ -82,7 +82,6 @@ header {
   justify-content: center;
   align-items: center;
   position: relative;
-  /* display: none; */
 }
 .image {
   width: 3rem;
@@ -117,8 +116,8 @@ header {
   border: 0.8rem solid #ffa943;
 }
 .imgPositionPaper {
-  bottom: 0;
-  left: 35%;
+  bottom: 1.4rem;
+  left: 37%;
 }
 .lines {
   position: absolute;
@@ -226,20 +225,18 @@ header {
 /* Main section done */
 
 footer {
-  height: 5%;
+  height: 6%;
   display: flex;
   justify-content: end;
-  align-items: end;
+  align-items: start;
   gap: 0.6rem;
-  /* display: none; */
 }
 .btn {
-  padding: 0.2rem;
+  padding: 0.2rem 0.9rem;
   font-size: 1rem;
   border: 2px solid #ffffff;
   border-radius: 0.6rem;
   background: transparent;
-  margin-bottom: 2rem;
   cursor: pointer;
 }
 .next {
@@ -254,8 +251,8 @@ footer {
   font-size: 0.9rem;
   width: 20rem;
   position: absolute;
-  right: 1rem;
-  top: 15rem;
+  right: -3rem;
+  top: 3rem;
   padding: 2rem;
   display: none;
 }
