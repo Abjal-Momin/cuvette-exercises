@@ -90,7 +90,7 @@ header {
   padding: 0 1rem;
 }
 .lines {
-  width: 80%;
+  width: 70%;
   height: 0.8rem;
   background-color: #000000a3;
   margin: auto;
@@ -122,7 +122,6 @@ header {
   top: 8rem;
   right: -2rem;
 }
-
 .secondRow {
   display: flex;
   justify-content: center;
@@ -144,6 +143,10 @@ header {
   align-items: center;
   z-index: 10;
   cursor: pointer;
+}
+.Circule:hover {
+  transform: scale(1.25) rotate(20deg);
+  transition: transform 0.5s ease-out;
 }
 .stone {
   border: 0.8rem solid #0074b6;
@@ -224,7 +227,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
- 
 }
 .innerRign {
   width: 8rem;
@@ -289,7 +291,7 @@ footer {
 /* .resetBtn {
   display: none;
 } */
- 
+
 /* footer section done */
 
 .rule {
@@ -302,7 +304,9 @@ footer {
   right: -12rem;
   top: 6rem;
   padding: 2rem;
+  z-index: 6;
   /* display: none; */
+  /* remove to stop opening rule at load*/
 }
 .rule li::marker {
   color: #ffd600;
@@ -333,4 +337,28 @@ footer {
   top: -1.3rem;
   right: -1.2rem;
   cursor: pointer;
+}
+
+/* Responsiveness by media query  */
+
+@media screen and (max-width: 1360px) and (min-width: 1151px) {
+  .rule {
+    right: -10rem;
+  }
+  .triangle{
+    left: -3.3rem;
+  }
+}
+@media screen and (max-width: 1150px) and (min-width: 900px) {
+  .rule {
+    right: -8rem;
+    width: 18rem;
+    height: 18rem;
+    font-size: 0.8rem;
+  }
+  .triangle{
+    left: -4rem;
+    width: 17.6rem;
+    height: 17.6rem;
+  }
 }

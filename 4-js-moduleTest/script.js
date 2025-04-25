@@ -69,13 +69,13 @@ function userChoise(num, style) {
   }
 
   //Removing ring color user & pc
-  mostUser.style.backgroundColor = "#8CC461";
-  outerUser.style.backgroundColor = "#8CC461";
-  innerUser.style.backgroundColor = "#8CC461";
+  mostUser.style.border = "none";
+  outerUser.style.border = "none";
+  innerUser.style.border = "none";
 
-  mostPc.style.backgroundColor = "#8CC461";
-  outerPc.style.backgroundColor = "#8CC461";
-  innerPc.style.backgroundColor = "#8CC461";
+  mostPc.style.border = "none";
+  outerPc.style.border = "none";
+  innerPc.style.border = "none";
 
   //For generating and checking winner
   if (num == randomNum) {
@@ -106,14 +106,14 @@ function userChoise(num, style) {
     }
   }
 
-  // changeing against value
+  // changing against value
   if (winStatus.innerHTML === "TIE UP") {
     againstStatus.innerHTML = " ";
   } else {
     againstStatus.innerHTML = "AGAINST PC";
   }
 
-  // changeing next button
+  // changing next button
   if (winStatus.innerHTML === "YOU WIN") {
     nextBtn.style.display = "block";
   } else {
@@ -129,15 +129,24 @@ function userChoise(num, style) {
   userScoreNum.innerHTML = localStorage.getItem("userScoreStorage");
 
   //Adding ring color based on winner
-  if (winStatus.innerHTML === "YOU WIN") {
-    mostUser.style.backgroundColor = "#2f9a254c";
-    outerUser.style.backgroundColor = "#2e9a2563";
-    innerUser.style.backgroundColor = "#2f9a25cc";
-  } else if (winStatus.innerHTML === "YOU LOST") {
-    mostPc.style.backgroundColor = "#2f9a254c";
-    outerPc.style.backgroundColor = "#2e9a2563";
-    innerPc.style.backgroundColor = "#2f9a25cc";
+  function rings() {
+    if (winStatus.innerHTML === "YOU WIN") {
+      mostUser.style.border = "1rem solid #2f9a253f";
+      mostUser.style.transition = "border 0.8s ease-out";
+      outerUser.style.border = "1rem solid #2e9a2563";
+      outerUser.style.transition = "border 0.8s ease-out";
+      innerUser.style.border = "1rem solid #2f9a25cc";
+      innerUser.style.transition = "border 0.8s ease-out";
+    } else if (winStatus.innerHTML === "YOU LOST") {
+      mostPc.style.border = "1rem solid #2f9a253f";
+      mostPc.style.transition = "border 0.8s ease-out";
+      outerPc.style.border = "1rem solid #2e9a2563";
+      outerPc.style.transition = "border 0.8s ease-out";
+      innerPc.style.border = "1rem solid #2f9a25cc";
+      innerPc.style.transition = "border 0.8s ease-out";
+    }
   }
+  setTimeout(rings, 200);
 
   // changing main page
   userClick.style.display = "flex";
@@ -159,5 +168,6 @@ function resetScore() {
 // PLay Again
 function playAgain() {
   gameBegin.style.display = "flex";
+  nextBtn.style.display = "none";
   userClick.style.display = "none";
 }
