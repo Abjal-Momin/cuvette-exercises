@@ -53,13 +53,29 @@ function cross() {
 function userChoise(num, style) {
   rule.style.display = "none";
 
+  // image counter
+  // let count = 0;
+  // const intervalCount = setInterval(() => {
+  //   const randomNum = Math.floor(Math.random() * 3) + 1;
+  //   imagePathPc.src = "./images/hand" + randomNum + ".png";
+  //   if (count >= 30) {
+  //     clearInterval(intervalCount);
+  //     return randomNum;
+  //   } else {
+  //     count++;
+  //   }
+  // }, 50);
+
   const randomNum = Math.floor(Math.random() * 3) + 1;
+
   //Image Part
   imagePathUser.src = "./images/hand" + num + ".png";
   imagePathPc.src = "./images/hand" + randomNum + ".png";
 
-  //For Styling part
+  //For Styling part of user
   imageBorderUser.className = style;
+
+  //For Styling part of pc
   if (randomNum == "1") {
     imageBorderPc.className = "stone";
   } else if (randomNum == "2") {
@@ -78,7 +94,7 @@ function userChoise(num, style) {
   innerPc.style.border = "none";
 
   //For generating and checking winner
-  if (num == randomNum) {
+  if (num === randomNum) {
     winStatus.innerHTML = "TIE UP";
   } else if (num == "1") {
     if (randomNum == "2") {
@@ -106,13 +122,6 @@ function userChoise(num, style) {
     }
   }
 
-  // changing against value
-  if (winStatus.innerHTML === "TIE UP") {
-    againstStatus.innerHTML = " ";
-  } else {
-    againstStatus.innerHTML = "AGAINST PC";
-  }
-
   // changing next button
   if (winStatus.innerHTML === "YOU WIN") {
     nextBtn.style.display = "block";
@@ -120,7 +129,14 @@ function userChoise(num, style) {
     nextBtn.style.display = "none";
   }
 
-  // seting score to local storage
+  // changing against value
+  if (winStatus.innerHTML === "TIE UP") {
+    againstStatus.innerHTML = " ";
+  } else {
+    againstStatus.innerHTML = "AGAINST PC";
+  }
+
+  // setting score to local storage
   localStorage.setItem("pcScoreStorage", pcScore);
   localStorage.setItem("userScoreStorage", userScore);
 
