@@ -8,6 +8,9 @@
   font-style: normal;
   color: #ffffff;
 }
+a {
+  text-decoration: none;
+}
 .outerWrapper {
   width: 100vw;
   height: 100vh;
@@ -73,20 +76,8 @@ header {
   height: 59%;
   position: relative;
 }
-/* .mainContainer {
-  height: 75%;
-  width: 40%;
-  margin: auto;
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-} */
-
 /* new try */
 .mainContainer {
-  /* border: 1px solid black; */
   width: 55%;
   height: 80%;
   margin: auto;
@@ -121,128 +112,6 @@ header {
   bottom: 8.3rem;
   left: -1.3rem;
 }
-.secondRow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 5;
-}
-
-/* new try */
-
-/* 2 new trick */
-
-/* .newOneContainer {
-  border: 1px solid black;
-  width: 55%;
-  height: 80%;
-  margin: auto;
-  position: relative;
-}
-.point {
-  width: 6rem;
-  height: 6rem;
-  border-radius: 50%;
-  position: absolute;
-  z-index: 2;
-}
-.top-left {
-  top: 0;
-  left: 0;
-}
-.top-right {
-  top: 0;
-  right: 0;
-}
-.bottom {
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-} */
-
-/* Connecting lines using pseudo-elements */
-/* .newOneContainer::before,
-.newOneContainer::after,
-.bottom::before {
-  content: "";
-  position: absolute;
-  background-color: #000000a3;
-  height: 0.7rem;
-  z-index: 1;
-} */
-
-/* .newOneContainer::before {
-  top: 2.9rem;
-  left: 6rem;
-  width: 80%;
-  transform: rotate(0deg);
-} */
-/* .newOneContainer::after {
-  top: 23px;
-  left: 18px;
-  width: 150px;
-  transform: rotate(20deg);
-  transform-origin: top left;
-} */
-/* .bottom::before {
-  top: -0px;
-  left: 11px;
-  width: 156px;
-  transform: rotate(-60deg);
-  transform-origin: top left;
-} */
-
-/* 2 new trick */
-
-.image {
-  width: 3rem;
-}
-.Circule {
-  width: 6rem;
-  height: 6rem;
-  background-color: #ffffff;
-  border-radius: 50%;
-  /* position: absolute; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-  cursor: pointer;
-}
-.stone {
-  border: 0.8rem solid #0074b6;
-}
-/* .imgPositionStone {
-  top: 0;
-  left: 0;
-} */
-.scissor {
-  border: 0.8rem solid #bd00ff;
-}
-/* .imgPositionScriccor {
-  top: 0;
-  right: 0;
-} */
-.paper {
-  border: 0.8rem solid #ffa943;
-}
-/* .imgPositionPaper {
-  bottom: 1.4rem;
-  left: 40%;
-} */
-/* .lines {
-  position: absolute;
-  width: 70%;
-  height: 0.8rem;
-  background-color: #000000a3;
-  z-index: 5;
-  transform-origin: center;
-} */
-/* .line1 {
-  top: 2.5rem;
-  left: 4rem;
-  transform: rotate(0deg);
-} */
 .line2 {
   transform: rotate(50deg);
   top: 9rem;
@@ -254,7 +123,39 @@ header {
   right: -2rem;
 }
 
+.secondRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+/* new try */
+
+.image {
+  width: 3rem;
+}
+.Circule {
+  width: 6rem;
+  height: 6rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
+}
+.stone {
+  border: 0.8rem solid #0074b6;
+}
+.scissor {
+  border: 0.8rem solid #bd00ff;
+}
+.paper {
+  border: 0.8rem solid #ffa943;
+}
 /* first main section done  */
+
 .secondSection {
   height: 80%;
   width: 80%;
@@ -310,30 +211,34 @@ header {
 }
 .outerMost {
   border-radius: 50%;
-  background-color: #2f9a254c;
+  /* background-color: #2f9a254c; */
   width: 12rem;
   height: 12rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: #8CC461; */
 }
 .outerRing {
   border-radius: 50%;
-  background-color: #2e9a2563;
+  /* background-color: #2e9a2563; */
   width: 10rem;
   height: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: #8CC461; */
+ 
 }
 .innerRign {
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
-  background-color: #2f9a25cc;
+  /* background-color: #2f9a25cc; */
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: #8CC461; */
 }
 .winnerSection {
   display: flex;
@@ -366,9 +271,13 @@ footer {
   height: 10%;
   padding: 0 1rem;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
   gap: 0.6rem;
+}
+.ruleSide {
+  display: flex;
+  gap: 0.5rem;
 }
 .btn {
   padding: 0.2rem 0.9rem;
@@ -380,6 +289,11 @@ footer {
 }
 .next {
   display: none;
+}
+
+/* Remove the comment to hide reset button */
+.resetBtn {
+  /* display: none; */
 }
 /* footer section done */
 

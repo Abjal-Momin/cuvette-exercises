@@ -1,0 +1,60 @@
+.outerSection {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #8cc461;
+}
+.trophySection {
+  width: 100%;
+  height: 55%;
+  margin-top: 3%;
+}
+.img {
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  background-image: url(./images/victory.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.traphy {
+  height: 70%;
+}
+.msgSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+}
+.hurray {
+  font-size: 5rem;
+  font-weight: 600;
+  letter-spacing: 0.4rem;
+}
+.rule {
+  right: 1rem;
+  top: 18rem;
+  display: none;
+}
+.wonGame {
+  font-size: 2.3rem;
+  letter-spacing: 0.2rem;
+}
+.winPlayBtn {
+  width: 13%;
+  margin: auto;
+  margin-top: 2rem;
+  text-align: center;
+}
+.playBtn {
+  width: 80%;
+  letter-spacing: 0.1rem;
+}
+.footer {
+  justify-content: end;
+}

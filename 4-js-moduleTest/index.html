@@ -27,60 +27,21 @@
               <div class="scoreBoard">
                 <p class="ScoreName">COMPUTER</p>
                 <p class="HeaderScore">SCORE</p>
-                <h2 class="scoreNumber">0</h2>
+                <h2 class="scoreNumber pcScore"></h2>
               </div>
               <div class="scoreBoard">
                 <p class="ScoreName">YOUR</p>
                 <p class="HeaderScore">SCORE</p>
-                <h2 class="scoreNumber">0</h2>
+                <h2 class="scoreNumber userScore"></h2>
               </div>
             </div>
           </div>
         </header>
 
         <main class="Main">
-          <!-- <div class="mainContainer">
-            <div
-              onclick="userChoise(1, 'stone')"
-              class="Circule stone imgPositionStone"
-            >
-              <img
-                src="./images/hand1.png"
-                class="image"
-                alt="Stone Hand Image"
-              />
-            </div>
-            <div
-              onclick="userChoise(2, 'scissor')"
-              class="Circule scissor imgPositionScriccor"
-            >
-              <img
-                src="./images/hand2.png"
-                class="image"
-                alt="Stone Hand Image"
-              />
-            </div>
-            <div
-              onclick="userChoise(3, 'paper')"
-              class="Circule paper imgPositionPaper"
-            >
-              <img
-                src="./images/hand3.png"
-                class="image"
-                alt="Stone Hand Image"
-              />
-            </div>
-            <div class="lines line1"></div>
-            <div class="lines line2"></div>
-            <div class="lines line3"></div>
-          </div> -->
-
           <div class="mainContainer">
             <div class="firstRow">
-              <div
-                onclick="userChoise(1, 'stone')"
-                class="Circule stone imgPositionStone"
-              >
+              <div onclick="userChoise(1, 'stone')" class="Circule stone">
                 <img
                   src="./images/hand1.png"
                   class="image"
@@ -88,10 +49,7 @@
                 />
               </div>
               <div class="lines line1"></div>
-              <div
-                onclick="userChoise(2, 'scissor')"
-                class="Circule scissor imgPositionScriccor"
-              >
+              <div onclick="userChoise(2, 'scissor')" class="Circule scissor">
                 <img
                   src="./images/hand2.png"
                   class="image"
@@ -103,10 +61,7 @@
               <div class="triangle"></div>
             </div>
             <div class="secondRow">
-              <div
-                onclick="userChoise(3, 'paper')"
-                class="Circule paper imgPositionPaper"
-              >
+              <div onclick="userChoise(3, 'paper')" class="Circule paper">
                 <img
                   src="./images/hand3.png"
                   class="image"
@@ -115,45 +70,6 @@
               </div>
             </div>
           </div>
-
-          <!-- <div class="newOneContainer">
-            <div class="point top-left">
-              <div
-                onclick="userChoise(1, 'stone')"
-                class="Circule stone imgPositionStone"
-              >
-                <img
-                  src="./images/hand1.png"
-                  class="image"
-                  alt="Stone Hand Image"
-                />
-              </div>
-            </div>
-            <div class="point top-right">
-              <div
-                onclick="userChoise(2, 'scissor')"
-                class="Circule scissor point top-right imgPositionScriccor"
-              >
-                <img
-                  src="./images/hand2.png"
-                  class="image"
-                  alt="Stone Hand Image"
-                />
-              </div>
-            </div>
-            <div class="point bottom">
-              <div
-                onclick="userChoise(3, 'paper')"
-                class="Circule paper point bottom imgPositionPaper"
-              >
-                <img
-                  src="./images/hand3.png"
-                  class="image"
-                  alt="Stone Hand Image"
-                />
-              </div>
-            </div>
-          </div> -->
 
           <div class="rule">
             <h2 class="ruleHeading">Game Rules</h2>
@@ -180,9 +96,9 @@
           <div class="secondSection">
             <div class="userSection">
               <p class="pick">YOU PICKED</p>
-              <div class="outerMost">
-                <div class="outerRing">
-                  <div class="innerRign">
+              <div class="outerMost mostUser">
+                <div class="outerRing outerUser">
+                  <div class="innerRign innerUser">
                     <div class="stone" id="SecondCirculeUser">
                       <img
                         src="./images/hand1.png"
@@ -201,9 +117,9 @@
             </div>
             <div class="pcSection">
               <p class="pick">YOU PICKED</p>
-              <div class="outerMost">
-                <div class="outerRing">
-                  <div class="innerRign">
+              <div class="outerMost mostPc">
+                <div class="outerRing outerPc">
+                  <div class="innerRign innerPc">
                     <div class="stone" id="SecondCirculePc">
                       <img
                         src="./images/hand1.png"
@@ -219,8 +135,13 @@
         </main>
       </div>
       <footer class="footer">
-        <button onclick="rules()" class="btn">RULES</button>
-        <button class="btn next">NEXT</button>
+        <div class="resetSide">
+          <button onclick="resetScore()" class="btn resetBtn">Reset</button>
+        </div>
+        <div class="ruleSide">
+          <button onclick="rules()" class="btn">RULES</button>
+          <a href="./winnerPage.html"><button class="btn next">NEXT</button></a>
+        </div>
       </footer>
     </div>
 
