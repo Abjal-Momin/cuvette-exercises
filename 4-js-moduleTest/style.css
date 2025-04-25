@@ -211,34 +211,28 @@ header {
 }
 .outerMost {
   border-radius: 50%;
-  /* background-color: #2f9a254c; */
   width: 12rem;
   height: 12rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #8CC461; */
 }
 .outerRing {
   border-radius: 50%;
-  /* background-color: #2e9a2563; */
   width: 10rem;
   height: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #8CC461; */
  
 }
 .innerRign {
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
-  /* background-color: #2f9a25cc; */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #8CC461; */
 }
 .winnerSection {
   display: flex;
@@ -292,9 +286,10 @@ footer {
 }
 
 /* Remove the comment to hide reset button */
-.resetBtn {
-  /* display: none; */
-}
+/* .resetBtn {
+  display: none;
+} */
+ 
 /* footer section done */
 
 .rule {
