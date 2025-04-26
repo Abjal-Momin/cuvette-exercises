@@ -112,16 +112,7 @@ header {
   bottom: 8.3rem;
   left: -1.3rem;
 }
-.line2 {
-  transform: rotate(50deg);
-  top: 9rem;
-  left: -2rem;
-}
-.line3 {
-  transform: rotate(-55deg);
-  top: 8rem;
-  right: -2rem;
-}
+
 .secondRow {
   display: flex;
   justify-content: center;
@@ -186,7 +177,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  z-index: 9;
   cursor: pointer;
 }
 #SecondCirculePc {
@@ -198,7 +189,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  z-index: 9;
   cursor: pointer;
 }
 .pcSection {
@@ -304,7 +295,7 @@ footer {
   right: -12rem;
   top: 6rem;
   padding: 2rem;
-  z-index: 6;
+  z-index: 10;
   /* display: none; */
   /* remove to stop opening rule at load*/
 }
@@ -341,24 +332,245 @@ footer {
 
 /* Responsiveness by media query  */
 
-@media screen and (max-width: 1360px) and (min-width: 1151px) {
+/* For trangle */
+@media screen and (max-width: 1999px) {
+  .lines {
+    width: 74%;
+  }
+  .triangle {
+    left: 3rem;
+  }
+}
+/* For trangle */
+@media screen and (max-width: 1650px) {
+  .triangle {
+    left: -1.7rem;
+  }
+}
+/* For trangle */
+@media screen and (max-width: 1420px) {
+  .triangle {
+    left: -4rem;
+  }
+}
+/* For trangle */
+@media screen and (max-width: 1360px) {
+  .triangle {
+    left: -3.9rem;
+    width: 18rem;
+    height: 18rem;
+  }
   .rule {
     right: -10rem;
   }
-  .triangle{
-    left: -3.3rem;
-  }
 }
-@media screen and (max-width: 1150px) and (min-width: 900px) {
+@media screen and (max-width: 1150px) {
+  .secondSection {
+    width: 100%;
+  }
   .rule {
     right: -8rem;
     width: 18rem;
     height: 18rem;
     font-size: 0.8rem;
   }
-  .triangle{
-    left: -4rem;
-    width: 17.6rem;
-    height: 17.6rem;
+  .triangle {
+    left: -3rem;
+    width: 16rem;
+    height: 16rem;
+  }
+}
+/* For trangle */
+@media screen and (max-width: 1050px) {
+  .triangle {
+    left: -3rem;
+    bottom: 7rem;
+    width: 14rem;
+    height: 14rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .mainContainer {
+    width: 80%;
+  }
+  .firstRow {
+    justify-content: space-between;
+  }
+  .rule {
+    right: -7rem;
+    top: 8rem;
+  }
+  .lines {
+    display: none;
+  }
+  .triangle {
+    display: none;
+  }
+}
+@media screen and (max-width: 860px) {
+  .rule {
+    right: -5rem;
+    top: 10rem;
+    width: 16rem;
+    height: 16rem;
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .innerWrapper {
+    width: 90%;
+    height: 90%;
+  }
+  #SecondCirculePc,
+  #SecondCirculeUser {
+    width: 7rem;
+    height: 7rem;
+  }
+  .outerMost {
+    width: 13rem;
+    height: 13rem;
+  }
+  .outerRing {
+    width: 11rem;
+    height: 11rem;
+  }
+  .innerRign {
+    width: 9rem;
+    height: 9rem;
+  }
+  .image {
+    width: 4rem;
+  }
+  .pick {
+    font-size: 1.3rem;
+  }
+  .againstPC {
+    font-size: 1rem;
+  }
+  .WinnerStatus {
+    font-size: 1.5rem;
+  }
+  .playBtn {
+    padding: 0.8rem 1rem;
+  }
+  .rule {
+    right: 0.5rem;
+    top: 10rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 14px;
+  }
+  .header {
+    height: 53%;
+  }
+  .image {
+    width: 5rem;
+  }
+  .Circule {
+    width: 8rem;
+    height: 8rem;
+  }
+  #SecondCirculePc,
+  #SecondCirculeUser {
+    width: 8rem;
+    height: 8rem;
+  }
+  .rule {
+    right: 0.5rem;
+    top: 15rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 13px;
+  }
+  .mainContainer {
+    width: 80%;
+  }
+  .firstRow {
+    margin-top: 3rem;
+  }
+  .image {
+    width: 5rem;
+  }
+  .Circule {
+    width: 8rem;
+    height: 8rem;
+  }
+  #SecondCirculePc,
+  #SecondCirculeUser {
+    width: 9rem;
+    height: 9rem;
+  }
+  .btn {
+    padding: 0.4rem 1rem;
+    font-size: 1.5rem;
+  }
+  .rule {
+    right: 2rem;
+    top: 13rem;
+    width: 20rem;
+    height: 20rem;
+    font-size: 0.9rem;
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  #SecondCirculePc,
+  #SecondCirculeUser {
+    width: 7rem;
+    height: 7rem;
+  }
+  .imgPathPc,
+  .imgPathUser {
+    width: 4rem;
+  }
+  .outerMost {
+    width: 10rem;
+    height: 10rem;
+  }
+  .outerRing {
+    width: 8rem;
+    height: 8rem;
+  }
+  .innerRign {
+    width: 6rem;
+    height: 6rem;
+  }
+  .pick {
+    font-size: 1rem;
+  }
+  .againstPC {
+    font-size: 0.8rem;
+  }
+  .WinnerStatus {
+    font-size: 1.2rem;
+  }
+  .playBtn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header {
+    height: 40%;
+  }
+  .headerNames {
+    font-size: 1.2rem;
+  }
+  .scoreBoard {
+    width: 7rem;
+  }
+  .scoreNumber {
+    font-size: 2rem;
+  }
+  .WinnerStatus {
+    font-size: 1rem;
+  }
+  .playBtn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.6rem;
   }
 }

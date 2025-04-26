@@ -21,7 +21,7 @@ const mostPc = document.querySelector(".mostPc");
 const outerPc = document.querySelector(".outerPc");
 const innerPc = document.querySelector(".innerPc");
 
-// Main Functions
+// Main Functions variables
 const userClick = document.querySelector(".secondSection");
 const pcClick = document.querySelector(".pcSection");
 const imagePathUser = document.querySelector(".imgPathUser");
@@ -29,16 +29,26 @@ const imagePathPc = document.querySelector(".imgPathPc");
 const imageBorderUser = document.querySelector("#SecondCirculeUser");
 const imageBorderPc = document.querySelector("#SecondCirculePc");
 
-// Score variable and adding to score board on page
+// Score variable
 let pcScore = 0;
 let userScore = 0;
 
+// adding key to local Storage if not exist
+if (!localStorage.getItem("pcScoreStorage")) {
+  localStorage.setItem("pcScoreStorage", pcScore);
+}
+if (!localStorage.getItem("userScoreStorage")) {
+  localStorage.setItem("userScoreStorage", userScore);
+}
+
+// updating score board with local storage keys
 pcScoreNum.innerHTML = localStorage.getItem("pcScoreStorage");
 userScoreNum.innerHTML = localStorage.getItem("userScoreStorage");
 
 // updating variables with localStorage
 pcScore = localStorage.getItem("pcScoreStorage");
 userScore = localStorage.getItem("userScoreStorage");
+console.log(pcScore);
 
 // To show Rules section
 function rules() {
@@ -53,7 +63,8 @@ function cross() {
 function userChoise(num, style) {
   rule.style.display = "none";
 
-  // image counter
+  // image counter for future adding
+
   // let count = 0;
   // const intervalCount = setInterval(() => {
   //   const randomNum = Math.floor(Math.random() * 3) + 1;
@@ -93,7 +104,7 @@ function userChoise(num, style) {
   outerPc.style.border = "none";
   innerPc.style.border = "none";
 
-  //For generating and checking winner
+  //For generated num checking winner
   if (num === randomNum) {
     winStatus.innerHTML = "TIE UP";
   } else if (num == "1") {
@@ -136,11 +147,11 @@ function userChoise(num, style) {
     againstStatus.innerHTML = "AGAINST PC";
   }
 
-  // setting score to local storage
+  // updating local storage from variable
   localStorage.setItem("pcScoreStorage", pcScore);
   localStorage.setItem("userScoreStorage", userScore);
 
-  // geting from local storage
+  // updating score board from local storage
   pcScoreNum.innerHTML = localStorage.getItem("pcScoreStorage");
   userScoreNum.innerHTML = localStorage.getItem("userScoreStorage");
 

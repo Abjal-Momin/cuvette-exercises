@@ -17,6 +17,7 @@
   background-image: url(./images/victory.png);
   background-repeat: no-repeat;
   background-position: center;
+  object-fit: contain;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -57,4 +58,32 @@
 }
 .footer {
   justify-content: end;
+}
+
+/* Responsiveness by media query  */
+@media screen and (max-width: 1060px) {
+  .winPlayBtn {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .traphy {
+    height: 50%;
+  }
+  .winPlayBtn {
+    width: 40%;
+  }
+  .hurray {
+    font-size: 4rem;
+  }
+  .wonGame {
+    font-size: 2rem;
+  }
+  .winPlayAgain{
+    font-size: 1rem;
+  }
 }
