@@ -2,11 +2,11 @@
 ---
 
 # 📄 Project Title
-Stone Paper Scissor Game
+Stone Paper Scissor Game
 
 ## 🧑‍💻 Author
 
-- **Name: Abjal Moin
+- **Name: Abjal Moin
 
 ## 🚀 Live Demo
 ```bash
@@ -15,13 +15,13 @@ https://stone-paper-scissor-gamefun.netlify.app/
 
 ## 🛠️ Tech Stac
 
-- HTML5
-- CSS3
-- JAVASCRIPT
+- HTML5
+- CSS3
+- JAVASCRIPT
 
 ## 📁 Project Strucure
 
-
+
 ```plaintext
 ├── index.html
 ├── styles.css
@@ -31,7 +31,7 @@ https://stone-paper-scissor-gamefun.netlify.app/
 ├── images/
 └── README.md
 ```
-
+
 
 
 ## 🕹️ Project Description
@@ -43,18 +43,18 @@ The project is designed to demonstrate basic frontend development concepts in an
 
 To run this project localy:
 
-1. Clone the reository:
+1. Clone the reository:
    ```bash
    https://github.com/Abjal-Momin/cuvette-exercises.git
    ``
-
-2. Navigate to the project drectory:
+
+2. Navigate to the project drectory:
    ```bash
    cd cuvette-exercises/4-js-moduleTest
    ``
-
-3. Open `index.html` in your preferred web-browser.
+
+3. Open `index.html` in your preferred web-browser.
 
 ## 📄License
 
-This project is licensed under the [MIT License]LICENSE).
+This project is licensed under the LICENSE.
