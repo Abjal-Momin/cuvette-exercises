@@ -10,7 +10,7 @@
 
 ## 🚀 Live Deo
 ```bash
-https://landing-page-zomatoo.netlify.app/
+https://stone-paper-scissor-gamefun.netlify.app/
 ```
 
 ## 🛠️ Tech Stac
