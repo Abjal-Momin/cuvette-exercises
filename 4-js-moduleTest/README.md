@@ -6,9 +6,9 @@
 
 ## 🧑‍💻 Author
 
-- **Name:* Abjal Moin
+- **Name: Abjal Moin
 
-## 🚀 Live Deo
+## 🚀 Live Demo
 ```bash
 https://stone-paper-scissor-gamefun.netlify.app/
 ```
