@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: gray;
+        width: 99vw;
+        height: 99vh;
+        overflow-y: hidden;
+      }
+      header {
+        height: 25%;
+      }
+      .firstContent {
+        width: 80%;
+        padding: 1rem;
+        margin: auto;
+        margin-top: 2rem;
+        background-color: rgba(223, 223, 105, 0.618);
+        border: 5px dashed orangered;
+      }
+      main {
+        height: 74%;
+      }
+      .secondContent {
+        width: 30%;
+        height: 50%;
+        padding: 1rem;
+        margin: 1rem;
+        border-top: 10px double blue;
+        border-bottom: 10px double blue;
+        background-color: rgba(4, 177, 186, 0.907);
+      }
+      .thirdContent {
+        height: 35%;
+        width: 60%;
+        background-color: rgb(177, 117, 5);
+        padding: 1rem;
+        margin: 1rem;
+        margin-left: auto;
+        border: 3mm ridge rgba(203, 58, 6, 0.874);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="firstContent">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere aperiam
+        rem sed quae labore, culpa quis accusantium eum fuga fugit sapiente!
+        Unde asperiores fugiat veritatis ullam totam? Laborum illum aspernatur,
+        molestiae quae, blanditiis quos optio aut necessitatibus expedita
+        tempora ut ipsa a nobis eum quia iste aliquid! Vitae, quos sequi?
+      </div>
+    </header>
+    <hr />
+    <main>
+      <div class="secondContent">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+        expedita et corrupti beatae quasi, excepturi molestias voluptatibus
+        officia obcaecati sunt veniam incidunt ab debitis? Blanditiis tempora
+        rerum dolorem libero! Est quos laborum
+      </div>
+      <div class="thirdContent">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
+        repellendus rem iste expedita eius repellat officia ducimus quaerat,
+        architecto, molestiae reiciendis debitis voluptas facilis recusandae
+        ipsa quis in aut enim.
+      </div>
+    </main>
+  </body>
+</html>

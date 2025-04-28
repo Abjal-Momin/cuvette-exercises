@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Resume</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        padding: 0.9rem;
+      }
+      .header {
+        height: 25%;
+        width: 50%;
+        margin: auto;
+      }
+      .img {
+        width: 4rem;
+        height: 4rem;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-left: 44%;
+        margin-bottom: 1rem;
+      }
+      .nameTitle {
+        color: blue;
+        text-align: center;
+        margin-bottom: 0.5rem;
+      }
+      .numberLinks {
+        text-align: center;
+        letter-spacing: 1px;
+        color: green;
+      }
+      .mainContent {
+        font-size: 0.9rem;
+      }
+      .sectionHeading {
+        color: rgb(152, 2, 2);
+        text-decoration: solid underline;
+        padding: 0.5rem;
+      }
+      .summary {
+        padding-bottom: 0.5rem;
+      }
+      ul > li:first-child {
+        font-weight: 700;
+      }
+      ol > li:first-child {
+        font-weight: 700;
+      }
+      footer {
+        margin-top: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="img"
+        src="https://t3.ftcdn.net/jpg/06/01/17/18/360_F_601171827_GwbDHEuhisbGFXRfIpXFhtf7wAvsbLut.jpg"
+        alt="Image from net"
+      />
+      <h2 class="nameTitle">Abjal Momin</h2>
+      <p class="numberLinks">+91 1234567890 | Linkedin | Software Engineer</p>
+    </header>
+    <main class="mainContent">
+      <h3 class="sectionHeading">Profile Summary</h3>
+      <p class="summary">
+        <b>Summary:</b> Lorem ipsum dolor, sit amet consectetur adipisicing
+        elit. Quasi cum rem obcaecati vel. Qui nesciunt, fugiat atque ad commodi
+        illum! Quasi cum rem obcaecati vel. Qui nesciunt, fugiat atque ad
+        commodi illum!
+      </p>
+      <hr />
+      <h3 class="sectionHeading">Education</h3>
+      <ol>
+        <li>ABC Engineering College</li>
+        <ul>
+          <li>2019-2023</li>
+          <li>Information Technology</li>
+          <li>9.2 GPA</li>
+        </ul>
+        <li>XYZ High School</li>
+        <ul>
+          <li>2019</li>
+          <li>PCMB</li>
+          <li>90%</li>
+        </ul>
+      </ol>
+      <hr />
+      <h3 class="sectionHeading">Experience</h3>
+      <ul>
+        <li>Sofware Enginner at ABC Tech</li>
+        <ul>
+          <li>July 2023 - Present</li>
+          <li>Worked on front-end development using React.js</li>
+        </ul>
+        <li>Intern at XYZ Solutions</li>
+        <ul>
+          <li>Jan 2022 - May 2022</li>
+          <li>Assisted in developing web application</li>
+        </ul>
+      </ul>
+      <hr />
+      <h3 class="sectionHeading">Skills</h3>
+      <ul>
+        <li>Web Development (HTML, CSS, JavaScript, React)</li>
+        <li>Database Management (MySQL, MongoDB)</li>
+        <li>Version Control (Git, GitHub)</li>
+      </ul>
+      <hr />
+      <h3 class="sectionHeading">Certifications</h3>
+      <ul>
+        <li>Certified Front-end Developer - ABC Academy</li>
+        <li>Database Management Certification - XYZ Institude</li>
+      </ul>
+    </main>
+    <footer>
+      <p><b>Summary:</b> <b>Contact :</b> user.name@example.com</p>
+    </footer>
+  </body>
+  <!-- Done  -->
+</html>

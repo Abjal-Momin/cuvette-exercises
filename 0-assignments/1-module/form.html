@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+      }
+      .main {
+        width: 40%;
+        margin: auto;
+        margin-top: 1rem;
+        padding: 1rem;
+        border: 2px solid gray;
+      }
+      .heading {
+        margin: 1rem;
+        text-align: center;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 0.5rem;
+      }
+      .form > label {
+        font-weight: 600;
+      }
+      .form > input {
+        border: 1px solid red;
+        border-radius: 4px;
+        padding: 0.3rem;
+      }
+      textarea {
+        border-radius: 4px;
+      }
+      .terms {
+        color: blue;
+        text-decoration: solid underline;
+        cursor: pointer;
+      }
+      .register,
+      .reset {
+        width: 49%;
+        background-color: rgba(6, 63, 154, 0.955);
+        color: white;
+        padding: 0.5rem;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding: 5px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <h2 class="heading">User Registration Form</h2>
+      <form action="#" class="form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter your full name" />
+        <label for="name">Email Address:</label>
+        <input type="email" id="email" placeholder="Enter your email" />
+        <label for="Password">Password:</label>
+        <input type="password" id="Password" placeholder="Enter a password" />
+        <label for="confirmPassword">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          placeholder="Re-enter password"
+        />
+        <label for="date">Date of Birth:</label>
+        <input type="date" name="date" id="date" />
+        <label for="picture">Profile Picture:</label>
+        <input type="file" name="picture" id="picture" />
+        <label for="comment">Comments/Feedback:</label>
+        <textarea name="comment" id="comment">
+ Leave your comment's here</textarea
+        >
+        <label for="subscription">Newsletter Subscription:</label>
+        <select name="subscription" id="subscription">
+          <option value="mothly">Monthly</option>
+          <option value="weekly">Weekly</option>
+          <option value="year">yearly</option>
+        </select>
+        <div class="agreeement">
+          <input type="checkbox" id="agreement" />
+          <label for="agreement"
+            >I agree to the
+            <span class="terms">Terms and Conditions</span></label
+          >
+        </div>
+        <div class="buttons">
+          <button class="register">Register</button>
+          <button class="reset">Reset</button>
+        </div>
+      </form>
+    </main>
+  </body>
+  <!-- Done -->
+</html>
