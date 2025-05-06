@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(153, 151, 151);
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+
+.footer {
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.footerCopyRight {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.linksSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.links {
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+}
+.SocitialLinksImg {
+  width: 2.5rem;
+}
+.SocitialLinksImg:hover {
+  transform: scale(1.2);
+  border-radius: 10px;
+  box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
+}
