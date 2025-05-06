@@ -10,7 +10,7 @@ User List
 
 ## 🚀 Live Demo
 ```bash
-
+https://project-user-list.netlify.app/
 ```
 
 ## 🛠️ Tech Stac
@@ -46,7 +46,7 @@ To run this project localy:
    ``
 4. Run in terminal.
     ```bash
-   npm run dev
+   npm run preview
    ``
 5. Open in browser "o + Enter".
 
