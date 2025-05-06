@@ -1,42 +1,149 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #967e76;
+  font-family: poppins;
+}
+body {
+  /* background-color: #6096b4; */
+  background-image: linear-gradient(
+    to bottom,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+}
+a {
+  text-decoration: none;
+}
+
+/* Header Section */
+.UserList {
+  color: #5c4b45;
+  text-align: center;
+  height: 10vh;
+  background-image: linear-gradient(
+    to top,
+    #d16ba5,
+    #cc71af,
+    #c777b9,
+    #c17dc2,
+    #ba83ca
+  );
+}
+
+/* Card Section */
+.container {
+  display: inline-flex;
+  width: 21rem;
+  height: 21rem;
+  margin: 1rem;
+}
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 20rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: #93bfcf;
+}
+.cardWrapper:hover {
+  box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
+}
+.userCard {
+  width: 19rem;
+  height: 19rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #bdcdd6;
+}
+.imgSection {
+  display: flex;
+  justify-content: center;
+}
+.userImage {
+  width: 9rem;
+}
+.nameSection {
+  display: flex;
+  justify-content: flex-start;
+  margin: 1rem 0;
+}
+.userName {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.ageSection {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.Icons {
+  width: 1.5rem;
+}
+.addessSection {
+  display: flex;
+  gap: 1rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+.userAddres {
+  letter-spacing: 1px;
+}
+
+/* Footer Section */
+.footer {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.8rem;
+  background-image: linear-gradient(
+    to right top,
+    #86a8e7,
+    #69bff8,
+    #4ad5ff,
+    #41e9fd,
+    #5ffbf1
+  );
+}
+.footerCopyRight {
+  font-weight: 600;
+  font-size: 1.3rem;
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.connectText {
+  font-size: 1.1rem;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.linksSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.links {
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.SocitialLinksImg {
+  width: 2.5rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.SocitialLinksImg:hover {
+  transform: scale(1.2);
+  border-radius: 10px;
+  box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
 }
