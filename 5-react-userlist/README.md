@@ -1,12 +1,55 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# 📄 Project Title
+User List
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧑‍💻 Author
 
-## Expanding the ESLint configuration
+- **Name: Abjal Moin
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Live Demo
+```bash
+
+```
+
+## 🛠️ Tech Stac
+
+- HTML5
+- CSS3
+- JAVASCRIPT
+- React js (Vite)
+
+
+## 🕹️ Project Description
+
+A simple react projects to use my skill, User List project which has Avatar, Name, Age & Address.
+Just using free Api for Avatar create Avatar for Male and Female personalities
+
+## 📌 Getting Started
+
+To run this project localy:
+
+1. Clone the reository:
+   ```bash
+   https://github.com/Abjal-Momin/cuvette-exercises.git
+   ``
+
+2. Navigate to the project drectory:
+   ```bash
+   cd cuvette-exercises/5-react-userlist
+   ``
+
+3. Install Node modules.
+    ```bash
+   npm install
+   ``
+4. Run in terminal.
+    ```bash
+   npm run dev
+   ``
+5. Open in browser "o + Enter".
+
+## 📄License
+
+This project is licensed under the LICENSE.
